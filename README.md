@@ -41,6 +41,8 @@ R2-value {set of energy points at R2}
 
 ...
 
+There is a file AdiabaticPotCurves.jpg in the top level of this repository that is these adiabatic curves graphed Vs the hyper-radius. The energy eigenvalues would be horizontal lines at different levels showing whene in the 'well' that state lives.
+
 ## Set 3 - Complete eigenvectors
 I know you asked for 3 data sets, but the first 2 are what I am really interested in and what hold the most important physically relevant data for quantum system analysis. But, there is a third set, the eigenvectors of the complete schrodinger equation, which when graphed show the wave-form of the colliding complex. I am not sure if there are many interesting or important physical properties within this data, but it could be fun to analyse features like the wavelength or frequency of each state as the interaction strength varies, or how many intersections or couplings between each state exist with each setup.
 
