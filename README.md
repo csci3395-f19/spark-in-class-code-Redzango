@@ -12,6 +12,8 @@ What other variables can I change that will affect the energy levels?
 The current model for the pair-wise particle interaction is the Morse model, defined as U(r)=D[(1-e^{-a(r-r0)})^2-1]. But, there are at least two other interaction models, naimly the Poschl-Teller, U(r)=-D/cosh(r/r0)^2, and the VanderWalls potential. 
 Does changing which interaction model used affect any of the statistic found or answers to the questions?
 
+The structure of this data set is just a sorted list of energy values.
+
 ## Set 2 - Adiabatic Eigenvectors
 This data set is the eigenvector solutions to the adiabatic hamiltonian. Adiabatic separation is a technique used to help numerically approximate the solutions to the analytically unsolvable schrodinger wave equations for a four-body particle collision. The adiabatic subproblem incorporates all the hyper-angular dependencies as well as the interparticle interactions, leaving out the hyper-radial kinetic energy components. This data shows the potential energy channels available to the system, and each curve is a solution to one of the infinite set of 1st order linear differential equations that describe the adiabatic states of the system. Like the eigenvalue data, this data is dependent on D, the Depth of the potential that models the strength of the interparticle interactions. Also like the eigenvalues, this data can benefit in accuracy and sheer size with the ability to do more intensive calculations.
 The chaos of this adiabatic system can also be statistically analyzed using a probability histogram of the spacings between each curve at EACH radial point. Does the chaos at any given hyper-radius change as D changes?
@@ -30,6 +32,14 @@ Another option would be to reinstate all symmetries, leading highly degenerate s
 
 Yet another variable that can be analysed for either of these datasets is the size of the basis approximation. This program uses two main approximation theorems, Quadrature Rule and Basis Expansion, to represent the wavefunctions and their interactions as data vectors and matrices allowing for linear algebra calculations. These theorems converge to being exact as the size of Quadrature Nodes and Basis Point reaches infinity.
 By what factor does the accuracy of the results of these approximations change as subsequent basis points or quadrature nodes are added?
+
+The structure of this data is 
+
+R1-value {set of energy points at R1}
+
+R2-value {set of energy points at R2}
+
+...
 
 ## Set 3 - Complete eigenvectors
 I know you asked for 3 data sets, but the first 2 are what I am really interested in and what hold the most important physically relevant data for quantum system analysis. But, there is a third set, the eigenvectors of the complete schrodinger equation, which when graphed show the wave-form of the colliding complex. I am not sure if there are many interesting or important physical properties within this data, but it could be fun to analyse features like the wavelength or frequency of each state as the interaction strength varies, or how many intersections or couplings between each state exist with each setup.
